@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Quiz</title>
+    <link rel="stylesheet" href="./quiz.css">
+    <script src="https://kit.fontawesome.com/240c369354.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     </head>
+<body>
+    <button class="start-quiz-btn">Start Quiz</button>
+    <div class="container">
+        <div class="top-bar">
+            <div class="question-counter">
+                <!-- Insert Top Bar Question count -->
+            </div>
+            <div class="timer">
+                <span><i class="fas fa-clock"></i></span>
+                <span class="time-left">15</span>
+            </div>
+            <div class="time_line"></div>
+        </div>
+        <div class="ques-text">
+            <!-- insert Question here -->
+        </div>
+        <div class="option-div">
+            <!-- insert Option here -->
+        </div>
+        <button class="next-ques-btn click-disable">Next Question</button>
+    </div>
+
+    <div class="result-div">
+        <!-- <i class="fas fa-bars"></i> -->
+        <i class="fas fa-crown"></i>
+        <span>You've completed the Quiz</span>
+        <div class="score">
+            <!-- insert Score Here -->
+        </div>
+        <button class="replay-quiz-btn" onclick="location.reload()">Play Again</button>
+    </div>
+
+</body>
+<script defer src="./questions.js"></script>
+<script defer src="./script.js"></script>
+</html>
