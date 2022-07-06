@@ -2,27 +2,15 @@ const questions =[
 
     {
         number:1,
-        question:'4950/6 + 112 x 1.75 = ? x 2' ,
-        answer: "510.5",
+        question:'A batsman scored 110 runs which included 3 boundaries and 8 sixes. What percent of his total score did he make by running between the wickets?',
+        answer: "46.5%",
         options:[
-            "510.5",
-            '505.2',
-            '515.5',
+            "45%",
+            "46.5%",
+            "55.6",
             'none of the above'
         ]
     },
-
-    // {
-    //     number:1,
-    //     question:'What does HTML Stand for' ,
-    //     answer: 'Hyper Text Markup Languagge',
-    //     options:[
-    //         'Home Tool Markup Languagge',
-    //         'Hyper Text Markup Languagge',
-    //         'Hyperlinks and Text Markup Languagge',
-    //         'Hyper Tool Markup Languagge'
-    //     ]
-    // },
 
     {
         number:2,
@@ -62,6 +50,7 @@ const questions =[
         ]
     },
 
+    
     {
         number:4,
         question:'Which of the below CSS class is used to change the text color of CSS?',

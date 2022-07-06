@@ -50,15 +50,17 @@ next_ques_btn.onclick =()=>{
 
 function showQuestions(index){
     let question_tag = `<span>` + questions[index].number +"."+questions[index].question+`</span>`;
-    let option_tag = `<div class="option"> <span>`+questions[index].options[0]+`</span></div>`+ `<div class="option"><span>`+questions[index].options[1]+`</span></div>`+
-       `<div class="option"><span>`+questions[index].options[2]+`</span></div>`+
-       `<div class="option"><span>`+questions[index].options[3]+`</span></div>`;
+    let option_tag = 
+    `<div class="option"><span>`+questions[index].options[0]+`</span></div>`+ 
+    `<div class="option"><span>`+questions[index].options[1]+`</span></div>`+
+    `<div class="option"><span>`+questions[index].options[2]+`</span></div>`+
+    `<div class="option"><span>`+questions[index].options[3]+`</span></div>`;
 
        question.innerHTML=question_tag;
        option_list.innerHTML=option_tag;
        const option=option_list.querySelectorAll('.option');
        for(let i=0;i<option.length;i++){
-        option[i].setAttribute('onclick','optionSelect(this)');
+            option[i].setAttribute('onclick','optionSelect(this)');
        }
 }
 
@@ -69,12 +71,16 @@ function optionSelect(answer){
     const user_answer = answer.textContent;
     let correctAns=questions[question_count].answer;
     let Alloption=option_list.children.length;
-
-    if(user_answer=== correctAns){
+    // console.log(typeof user_answer, user_answer, user_answer.length);
+    // console.log(typeof correctAns, correctAns,correctAns.length);
+    
+    if(user_answer === correctAns){
         score+=1;
         answer.classList.add("correct");
         answer.insertAdjacentHTML("beforeend",incorrectIcon);
-    }else{
+    }
+    else{
+        // console.log("Inner else", Alloption, typeof Alloption);
         answer.classList.add("incorrect");
         answer.insertAdjacentHTML("beforeend",incorrectIcon);
         for(i=0;i<Alloption;i++){
