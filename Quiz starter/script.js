@@ -10,7 +10,7 @@ const result=document.querySelector('.result-div');
 let play_again_btn=document.querySelector('.replay-quiz-btn');
 
 let correctIcon ='<div class="icon correct-icon"><i class="fas fa-check"></i></div>';
-let incorrectIcon='<div class="icon wrong-icon"><i class=" fas fa-xmark"></i></div>';
+let incorrectIcon='<div class="icon wrong-icon"><i class="fas fa-xmark"></i></div>';
 
 let question_count=0;
 let ques_number=1;
@@ -77,7 +77,7 @@ function optionSelect(answer){
     if(user_answer === correctAns){
         score+=1;
         answer.classList.add("correct");
-        answer.insertAdjacentHTML("beforeend",incorrectIcon);
+        answer.insertAdjacentHTML("beforeend",correctIcon);
     }
     else{
         // console.log("Inner else", Alloption, typeof Alloption);
